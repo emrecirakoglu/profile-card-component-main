@@ -1,0 +1,99 @@
+//color variables
+$DarkCyan: hsl(185, 75%, 39%);
+$VeryDarkDesaturateBlue: hsl(229, 23%, 23%);
+$DarkGrayishBlue: hsl(227, 10%, 46%);
+$DarkGray: hsl(0, 0%, 59%);
+$BorderColor: hsl(0, 0%, 89%);
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: $DarkCyan;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.card {
+    width: 350px;
+    position: absolute;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    .card-header {
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+    .profile-container {
+        text-align: center;
+        margin-top: -55px;
+        img {
+            border: 5px solid #ffffff;
+            border-radius: 50%;
+        }
+    }
+    .identity {
+        text-align: center;
+        padding: 1rem;
+        .city {
+            font-size: .75rem;
+            margin-top: .75rem;
+        }
+    }
+    .card-footer {
+        border-top: solid;
+        border-width: thin;
+        border-color: $BorderColor;
+        text-align: center;
+        display: flex;
+        padding: 1rem 0;
+        .box {
+            flex: 1;
+            .box-header {
+                color: $VeryDarkDesaturateBlue;
+                font-weight: 700;
+            }
+            .box-content {
+                color: $DarkGray;
+                font-size: .75rem;
+                margin-top: .25rem;
+            }
+        }
+    }
+}
+
+.text-bold {
+    color: $VeryDarkDesaturateBlue;
+    font-weight: 700;
+}
+
+.text-light {
+    color: $DarkGray;
+}
+
+.attribution {
+    font-size: 11px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
