@@ -99,6 +99,17 @@ body {
   z-index: -1;
 }
 
+@media (max-width: 480px) {
+  .bg-top {
+    top: -578px;
+    left: -758px;
+  }
+  .bg-bottom {
+    bottom: -628px;
+    right: -728px;
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
